@@ -14,11 +14,20 @@ public class CsillamPoni {
  private int csillamPont;
  public CsillamPoni(String nev, int csillamPont) {
      //adde this.nev since nev=nev wouldn't change the objects attribute
+     //added validation to constructor
+     if(nev==null||"".equals(nev))
+     {throw new IllegalArgumentException("A nev nem lehet null vagy ures");}
  this.nev = nev;
- this.csillamPont = csillamPont;
+ if(csillamPont<0)
+    {throw new IllegalArgumentException("A csillamPont csak pozitiv egesz szam lehet");}
+    this.csillamPont += csillamPont;
  }
- public void adjCsillamot(int mennyiseg) {
- csillamPont += mennyiseg;
+ public void adjCsillamot(int mennyiseg) 
+ {
+     //Added  validation to the set-er
+    if(mennyiseg<0)
+    {throw new IllegalArgumentException("A csillamPont csak pozitiv egesz szam lehet");}
+    csillamPont += mennyiseg;
  }
  public int getCsillamPont() {
  return csillamPont;
