@@ -11,13 +11,15 @@ package com.mycompany.csillamponifeladat;
 public class RepuloCsillamPoni extends CsillamPoni{
     private String szarnySzin;
  public RepuloCsillamPoni(String nev, int csillamPont,
- String szarnySzin) {
+ String szarnySzin) 
+ {
  super(nev, csillamPont);
  this.szarnySzin = szarnySzin;
  }
  @Override
- public String bemutatkozas() {
- return "Repulo poni: " + nev;
+ public String bemutatkozas() 
+ {
+ return "Repulo poni: " + getPoniNev()+" RepuloPoni pontszam:"+getCsillamPont()+ "Szarnyszin: "+this.szarnySzin;
  }
 
 }
