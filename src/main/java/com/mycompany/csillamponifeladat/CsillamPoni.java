@@ -12,7 +12,8 @@ public class CsillamPoni {
     public String nev;
  private int csillamPont;
  public CsillamPoni(String nev, int csillamPont) {
- nev = nev;
+     //adde this.nev since nev=nev wouldn't change the objects attribute
+ this.nev = nev;
  this.csillamPont = csillamPont;
  }
  public void adjCsillamot(int mennyiseg) {
