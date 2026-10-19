@@ -9,3 +9,4 @@ It inherits the "nev" and "csillamPont" attributes, and the methods of the "Csil
 We can also see polimorphism in the same class, since it overrides the "bemutatkozas()" method.
 <img width="1320" height="279" alt="image" src="https://github.com/user-attachments/assets/90a1008a-4d5c-49f9-b351-70918b24c2f8" />
 ^ screenshot of my commits made during the exam.
+The commits are made to the master branch, they don't show up on the main, because I uploaded the main, and I can't pull from master, since they are the same.
