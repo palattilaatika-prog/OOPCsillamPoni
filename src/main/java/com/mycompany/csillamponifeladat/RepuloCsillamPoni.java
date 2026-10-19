@@ -8,7 +8,7 @@ package com.mycompany.csillamponifeladat;
  *
  * @author Denes
  */
-public class RepuloCsillamPoni {
+public class RepuloCsillamPoni extends CsillamPoni{
     private String szarnySzin;
  public RepuloCsillamPoni(String nev, int csillamPont,
  String szarnySzin) {

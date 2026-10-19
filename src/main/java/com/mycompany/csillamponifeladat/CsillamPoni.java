@@ -9,7 +9,8 @@ package com.mycompany.csillamponifeladat;
  * @author Denes
  */
 public class CsillamPoni {
-    public String nev;
+    //made the string private (class only)
+    private String nev;
  private int csillamPont;
  public CsillamPoni(String nev, int csillamPont) {
      //adde this.nev since nev=nev wouldn't change the objects attribute
@@ -21,6 +22,11 @@ public class CsillamPoni {
  }
  public int getCsillamPont() {
  return csillamPont;
+ }
+ // added get-er fot the "nev" attribute
+ public String getPoniNev()
+ {
+     return this.nev;
  }
  public String bemutatkozas() {
  return nev + ": " + csillamPont;
