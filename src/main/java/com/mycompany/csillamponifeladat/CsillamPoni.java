@@ -40,5 +40,32 @@ public class CsillamPoni {
  public String bemutatkozas() {
  return nev + ": " + csillamPont;
  }
+ //leghoszabbCsillamSorozat implemented 
+ public static int leghosszabbCsillamSorozat(int[] napiPontok, int minimum)
+{
+    int ujeredmeny=0;
+    int regieredmeny=0;
+    if(napiPontok==null)
+    {return 0;}
+    for(int i=0;i<napiPontok.length;i++)
+    {
+        
+        if(minimum<=napiPontok[i])
+        {
+            ujeredmeny+=1;
+        }
+        else 
+        {
+            regieredmeny=ujeredmeny;
+            ujeredmeny=0;
+        }
+        
+    }
+    if(ujeredmeny>regieredmeny)
+    {return ujeredmeny;}
+    else if(ujeredmeny<regieredmeny)
+    {return regieredmeny;}
+    else return regieredmeny;
+}
 
 }
